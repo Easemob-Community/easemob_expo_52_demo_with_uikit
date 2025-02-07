@@ -48,3 +48,42 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+## create project flow
+
+```sh
+npx create-expo-app@latest 
+
+yarn set version 4.6.0
+
+yarn config set nodeLinker node-modules
+
+yarn run ios
+
+yarn run expo prebuild
+
+yarn add @react-native-async-storage/async-storage \
+@react-native-camera-roll/camera-roll \
+@react-native-clipboard/clipboard \
+date-fns \
+pinyin-pro \
+pure-uuid \
+react-native-chat-uikit \
+react-native-chat-sdk \
+react-native-audio-recorder-player \
+react-native-create-thumbnail \
+react-native-device-info \
+react-native-document-picker \
+react-native-fast-image \
+react-native-file-access \
+react-native-gesture-handler \
+react-native-get-random-values \
+react-native-image-picker \
+react-native-permissions \
+react-native-safe-area-context \
+react-native-screens \
+react-native-video \
+react-native-web \
+react-native-webview \
+twemoji
+```
