@@ -2007,6 +2007,43 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-native-async-storage/async-storage@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "@react-native-async-storage/async-storage@npm:2.1.1"
+  dependencies:
+    merge-options: "npm:^3.0.4"
+  peerDependencies:
+    react-native: ^0.0.0-0 || >=0.65 <1.0
+  checksum: 10c0/16858168576f034945f1180c9fdb57c54f1de1c80d08054f5d15f43347ac5e85b08f2af31fe632d673e9c09d65b8035bb3c77b61ba1d0dcd0f59240de4ae2ef5
+  languageName: node
+  linkType: hard
+
+"@react-native-camera-roll/camera-roll@npm:^7.9.0":
+  version: 7.9.0
+  resolution: "@react-native-camera-roll/camera-roll@npm:7.9.0"
+  peerDependencies:
+    react-native: ">=0.59"
+  checksum: 10c0/c398b35bb3faaed81c2640e62bbd9255553cb665fda57b72455430811a02b1178c25fcdf085f593994ef73abaf40d22498c4bb136abea14ce98329ba6b4ad1cb
+  languageName: node
+  linkType: hard
+
+"@react-native-clipboard/clipboard@npm:^1.16.1":
+  version: 1.16.1
+  resolution: "@react-native-clipboard/clipboard@npm:1.16.1"
+  peerDependencies:
+    react: ">= 16.9.0"
+    react-native: ">= 0.61.5"
+    react-native-macos: ">= 0.61.0"
+    react-native-windows: ">= 0.61.0"
+  peerDependenciesMeta:
+    react-native-macos:
+      optional: true
+    react-native-windows:
+      optional: true
+  checksum: 10c0/765e1c140c34fbfe30a1e7e0657cc2a325a103a4fcaf757994dff3d8877beb8c4f0b915eac5542ada5910560ce2cfe624cd23081302dd6d6bc76354ff0d98d5e
+  languageName: node
+  linkType: hard
+
 "@react-native/assets-registry@npm:0.76.7":
   version: 0.76.7
   resolution: "@react-native/assets-registry@npm:0.76.7"
@@ -2579,6 +2616,13 @@ __metadata:
   version: 15.7.14
   resolution: "@types/prop-types@npm:15.7.14"
   checksum: 10c0/1ec775160bfab90b67a782d735952158c7e702ca4502968aa82565bd8e452c2de8601c8dfe349733073c31179116cf7340710160d3836aa8a1ef76d1532893b1
+  languageName: node
+  linkType: hard
+
+"@types/react-native-get-random-values@npm:^1":
+  version: 1.8.2
+  resolution: "@types/react-native-get-random-values@npm:1.8.2"
+  checksum: 10c0/66c0268151d0673bff88828d82d4087aeabbe29a8ffe433f50e2593cd04872fc890f0d2660203435d13412b10d866d24a3ab72981cf481e5676ccf88de12c235
   languageName: node
   linkType: hard
 
@@ -3958,6 +4002,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"date-fns@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "date-fns@npm:4.1.0"
+  checksum: 10c0/b79ff32830e6b7faa009590af6ae0fb8c3fd9ffad46d930548fbb5acf473773b4712ae887e156ba91a7b3dc30591ce0f517d69fd83bd9c38650fdc03b4e0bac8
+  languageName: node
+  linkType: hard
+
 "debug@npm:2.6.9, debug@npm:^2.2.0, debug@npm:^2.6.9":
   version: 2.6.9
   resolution: "debug@npm:2.6.9"
@@ -4735,11 +4786,16 @@ __metadata:
   dependencies:
     "@babel/core": "npm:^7.25.2"
     "@expo/vector-icons": "npm:^14.0.2"
+    "@react-native-async-storage/async-storage": "npm:^2.1.1"
+    "@react-native-camera-roll/camera-roll": "npm:^7.9.0"
+    "@react-native-clipboard/clipboard": "npm:^1.16.1"
     "@react-navigation/bottom-tabs": "npm:^7.2.0"
     "@react-navigation/native": "npm:^7.0.14"
     "@types/jest": "npm:^29.5.12"
     "@types/react": "npm:~18.3.12"
+    "@types/react-native-get-random-values": "npm:^1"
     "@types/react-test-renderer": "npm:^18.3.0"
+    date-fns: "npm:^4.1.0"
     expo: "npm:~52.0.31"
     expo-blur: "npm:~14.0.3"
     expo-constants: "npm:~17.0.5"
@@ -4754,16 +4810,31 @@ __metadata:
     expo-web-browser: "npm:~14.0.2"
     jest: "npm:^29.2.1"
     jest-expo: "npm:~52.0.3"
+    pinyin-pro: "npm:^3.26.0"
+    pure-uuid: "npm:^1.8.1"
     react: "npm:18.3.1"
     react-dom: "npm:18.3.1"
     react-native: "npm:0.76.7"
-    react-native-gesture-handler: "npm:~2.20.2"
+    react-native-audio-recorder-player: "npm:^3.6.12"
+    react-native-chat-sdk: "npm:^1.8.0"
+    react-native-chat-uikit: /Users/asterisk/tmp2025/2025-01-20/react-native-chat-uikit-2.4.2
+    react-native-create-thumbnail: "npm:^2.0.1"
+    react-native-device-info: "npm:^14.0.4"
+    react-native-document-picker: "npm:^9.3.1"
+    react-native-fast-image: "npm:^8.6.3"
+    react-native-file-access: "npm:^3.1.1"
+    react-native-gesture-handler: "npm:^2.23.0"
+    react-native-get-random-values: "npm:^1.11.0"
+    react-native-image-picker: "npm:^8.0.0"
+    react-native-permissions: "npm:^5.2.5"
     react-native-reanimated: "npm:~3.16.1"
-    react-native-safe-area-context: "npm:4.12.0"
-    react-native-screens: "npm:~4.4.0"
-    react-native-web: "npm:~0.19.13"
-    react-native-webview: "npm:13.12.5"
+    react-native-safe-area-context: "npm:^5.2.0"
+    react-native-screens: "npm:^4.6.0"
+    react-native-video: "npm:^6.10.0"
+    react-native-web: "npm:^0.19.13"
+    react-native-webview: "npm:^13.13.2"
     react-test-renderer: "npm:18.3.1"
+    twemoji: "npm:^14.0.2"
     typescript: "npm:^5.3.3"
   languageName: unknown
   linkType: soft
@@ -4772,6 +4843,13 @@ __metadata:
   version: 3.1.2
   resolution: "exponential-backoff@npm:3.1.2"
   checksum: 10c0/d9d3e1eafa21b78464297df91f1776f7fbaa3d5e3f7f0995648ca5b89c069d17055033817348d9f4a43d1c20b0eab84f75af6991751e839df53e4dfd6f22e844
+  languageName: node
+  linkType: hard
+
+"fast-base64-decode@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "fast-base64-decode@npm:1.0.0"
+  checksum: 10c0/6d8feab513222a463d1cb58d24e04d2e04b0791ac6559861f99543daaa590e2636d040d611b40a50799bfb5c5304265d05e3658b5adf6b841a50ef6bf833d821
   languageName: node
   linkType: hard
 
@@ -5031,6 +5109,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fs-extra@npm:^8.0.1, fs-extra@npm:~8.1.0":
+  version: 8.1.0
+  resolution: "fs-extra@npm:8.1.0"
+  dependencies:
+    graceful-fs: "npm:^4.2.0"
+    jsonfile: "npm:^4.0.0"
+    universalify: "npm:^0.1.0"
+  checksum: 10c0/259f7b814d9e50d686899550c4f9ded85c46c643f7fe19be69504888e007fcbc08f306fae8ec495b8b998635e997c9e3e175ff2eeed230524ef1c1684cc96423
+  languageName: node
+  linkType: hard
+
 "fs-extra@npm:^9.0.0, fs-extra@npm:^9.1.0":
   version: 9.1.0
   resolution: "fs-extra@npm:9.1.0"
@@ -5040,17 +5129,6 @@ __metadata:
     jsonfile: "npm:^6.0.1"
     universalify: "npm:^2.0.0"
   checksum: 10c0/9b808bd884beff5cb940773018179a6b94a966381d005479f00adda6b44e5e3d4abf765135773d849cc27efe68c349e4a7b86acd7d3306d5932c14f3a4b17a92
-  languageName: node
-  linkType: hard
-
-"fs-extra@npm:~8.1.0":
-  version: 8.1.0
-  resolution: "fs-extra@npm:8.1.0"
-  dependencies:
-    graceful-fs: "npm:^4.2.0"
-    jsonfile: "npm:^4.0.0"
-    universalify: "npm:^0.1.0"
-  checksum: 10c0/259f7b814d9e50d686899550c4f9ded85c46c643f7fe19be69504888e007fcbc08f306fae8ec495b8b998635e997c9e3e175ff2eeed230524ef1c1684cc96423
   languageName: node
   linkType: hard
 
@@ -5440,6 +5518,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"hyochan-welcome@npm:^1.0.0":
+  version: 1.0.1
+  resolution: "hyochan-welcome@npm:1.0.1"
+  bin:
+    hyochan-welcome: bin/hello.js
+  checksum: 10c0/a1e499188e71f9183ec199aa0fbf340e764442f494df025ef52f66896339ae3f7633257bed21e3dc9ea2b8b6150a49b07483d94a28e053f92be243cb9be90c55
+  languageName: node
+  linkType: hard
+
 "hyphenate-style-name@npm:^1.0.3":
   version: 1.1.0
   resolution: "hyphenate-style-name@npm:1.1.0"
@@ -5717,6 +5804,13 @@ __metadata:
   version: 3.0.3
   resolution: "is-path-inside@npm:3.0.3"
   checksum: 10c0/cf7d4ac35fb96bab6a1d2c3598fe5ebb29aafb52c0aaa482b5a3ed9d8ba3edc11631e3ec2637660c44b3ce0e61a08d54946e8af30dec0b60a7c27296c68ffd05
+  languageName: node
+  linkType: hard
+
+"is-plain-obj@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "is-plain-obj@npm:2.1.0"
+  checksum: 10c0/e5c9814cdaa627a9ad0a0964ded0e0491bfd9ace405c49a5d63c88b30a162f1512c069d5b80997893c4d0181eadc3fed02b4ab4b81059aba5620bfcdfdeb9c53
   languageName: node
   linkType: hard
 
@@ -6592,6 +6686,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"jsonfile@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "jsonfile@npm:5.0.0"
+  dependencies:
+    graceful-fs: "npm:^4.1.6"
+    universalify: "npm:^0.1.2"
+  dependenciesMeta:
+    graceful-fs:
+      optional: true
+  checksum: 10c0/281e32ca64e5731eb5cf6b53d759e20ed8ff94d4479336c174f5dfaf0d65b74317c3bb248386a57e2296bfd75fec9e3b5a4eb7f3fc03eb235ae1de598e3b7ae7
+  languageName: node
+  linkType: hard
+
 "jsonfile@npm:^6.0.1":
   version: 6.1.0
   resolution: "jsonfile@npm:6.1.0"
@@ -6932,6 +7039,15 @@ __metadata:
   version: 6.0.0
   resolution: "memoize-one@npm:6.0.0"
   checksum: 10c0/45c88e064fd715166619af72e8cf8a7a17224d6edf61f7a8633d740ed8c8c0558a4373876c9b8ffc5518c2b65a960266adf403cc215cb1e90f7e262b58991f54
+  languageName: node
+  linkType: hard
+
+"merge-options@npm:^3.0.4":
+  version: 3.0.4
+  resolution: "merge-options@npm:3.0.4"
+  dependencies:
+    is-plain-obj: "npm:^2.1.0"
+  checksum: 10c0/02b5891ceef09b0b497b5a0154c37a71784e68ed71b14748f6fd4258ffd3fe4ecd5cb0fd6f7cae3954fd11e7686c5cb64486daffa63c2793bbe8b614b61c7055
   languageName: node
   linkType: hard
 
@@ -7929,6 +8045,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"pinyin-pro@npm:^3.26.0":
+  version: 3.26.0
+  resolution: "pinyin-pro@npm:3.26.0"
+  checksum: 10c0/5feeaa8144e3f5b815f5496688882144dcb34a3367af9aeea3c8f74dcb2785782347e6a3303a904d82e8ced1f604448fa6f4e51ba52f548cca7ac31de416c110
+  languageName: node
+  linkType: hard
+
 "pirates@npm:^4.0.1, pirates@npm:^4.0.4, pirates@npm:^4.0.6":
   version: 4.0.6
   resolution: "pirates@npm:4.0.6"
@@ -8118,6 +8241,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"pure-uuid@npm:^1.8.1":
+  version: 1.8.1
+  resolution: "pure-uuid@npm:1.8.1"
+  checksum: 10c0/18ab4b5c6f9005dfd9cf2d2dfe0ddbc8743b270ed23ebf252b6b90aa290916504a0fb5241ac193e3f2d8b258eb9bf312aa24ebda7a239d0d4ca156f8a2714ac7
+  languageName: node
+  linkType: hard
+
 "qrcode-terminal@npm:0.11.0":
   version: 0.11.0
   resolution: "qrcode-terminal@npm:0.11.0"
@@ -8251,18 +8381,143 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-gesture-handler@npm:~2.20.2":
-  version: 2.20.2
-  resolution: "react-native-gesture-handler@npm:2.20.2"
+"react-native-audio-recorder-player@npm:^3.6.12":
+  version: 3.6.12
+  resolution: "react-native-audio-recorder-player@npm:3.6.12"
+  dependencies:
+    hyochan-welcome: "npm:^1.0.0"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 10c0/9e740463a43457bb1518361c79b691e803ad55c7f0fe8d7c49a97aecf31bdc87b03c0ba28a8f2a05b35bb83d08b5e2cc15af749903817f542406cfe9602abf32
+  languageName: node
+  linkType: hard
+
+"react-native-chat-sdk@npm:^1.8.0":
+  version: 1.8.0
+  resolution: "react-native-chat-sdk@npm:1.8.0"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 10c0/15e6a3369afe090c222e2ce739f7eb8b63c8ed04b14eb188c41b787ee69e50344806a8dc7352238096c1d75589d9f282d760d57770a6c501cd48c00f616beea6
+  languageName: node
+  linkType: hard
+
+"react-native-chat-uikit@file:/Users/asterisk/tmp2025/2025-01-20/react-native-chat-uikit-2.4.2::locator=expo_demo_2025-02-07%40workspace%3A.":
+  version: 2.4.2
+  resolution: "react-native-chat-uikit@file:/Users/asterisk/tmp2025/2025-01-20/react-native-chat-uikit-2.4.2#/Users/asterisk/tmp2025/2025-01-20/react-native-chat-uikit-2.4.2::hash=75a83b&locator=expo_demo_2025-02-07%40workspace%3A."
+  peerDependencies:
+    "@react-native-async-storage/async-storage": ">=1.17.11"
+    "@react-native-camera-roll/camera-roll": ">=5.6.0"
+    "@react-native-clipboard/clipboard": ">=1.11.2"
+    pinyin-pro: ">=3.18.3"
+    pure-uuid: ">=1.6.3"
+    react: "*"
+    react-native: "*"
+    react-native-audio-recorder-player: ">=3.5.3"
+    react-native-chat-sdk: ">=1.3.1"
+    react-native-create-thumbnail: ">=1.6.6"
+    react-native-device-info: ">=10.12.0"
+    react-native-document-picker: ">=9.0.1"
+    react-native-fast-image: ">=8.6.3"
+    react-native-file-access: ">=3.0.4"
+    react-native-fs: ">=2.20.0"
+    react-native-gesture-handler: ">=2.9.0"
+    react-native-get-random-values: ">=1.8.0"
+    react-native-image-picker: ">=5.4.2"
+    react-native-linear-gradient: ">=2.8.3"
+    react-native-pager-view: 6.1.2
+    react-native-paper: ">=5.8.0"
+    react-native-permissions: ">=3.8.0"
+    react-native-reanimated: ">=2.14.4"
+    react-native-safe-area-context: ">=4.11.1"
+    react-native-screens: ">=3.20.0"
+    react-native-tab-view: ">=3.5.1"
+    react-native-video: ">=5.2.1"
+    twemoji: ">=14.0.2"
+  peerDependenciesMeta:
+    react-native-fast-image:
+      optional: true
+  checksum: 10c0/4bbb2aa8563301344acc4a5b581d14a2a57790d3a985f9030d90b5c740697ab6affccf2cd1bc55487b5b1ae23441941c482e70346fcb579c22dda310e7426b70
+  languageName: node
+  linkType: hard
+
+"react-native-create-thumbnail@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "react-native-create-thumbnail@npm:2.0.1"
+  peerDependencies:
+    react-native: ">=0.59.0"
+  checksum: 10c0/ae3bcf48ebece2b04830a72a87456766933b836c86bad83946a51328a2d5f741f94f65c20a31dcf4dd26f1334f45114bd2842643fecd5440e60d064ecd393669
+  languageName: node
+  linkType: hard
+
+"react-native-device-info@npm:^14.0.4":
+  version: 14.0.4
+  resolution: "react-native-device-info@npm:14.0.4"
+  peerDependencies:
+    react-native: "*"
+  checksum: 10c0/3d89519b4e9f9f130b352f5243282f8b807aba0f55ccc0e1dc9f15b285215949751491ef2f11f1984a55f0f5e0ae76cd16620d2cdfcc118e2ca5f39d300d5524
+  languageName: node
+  linkType: hard
+
+"react-native-document-picker@npm:^9.3.1":
+  version: 9.3.1
+  resolution: "react-native-document-picker@npm:9.3.1"
+  dependencies:
+    invariant: "npm:^2.2.4"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+    react-native-windows: "*"
+  peerDependenciesMeta:
+    react-native-windows:
+      optional: true
+  checksum: 10c0/62ac1c1567fb4aabd791c03768e51b0898de727e37bb695cca9fc72c31eb3f2d75faf5bc7fb4be86a3e2b96b77cf948558b496412ecf17687ca006eb52ef6dd8
+  languageName: node
+  linkType: hard
+
+"react-native-fast-image@npm:^8.6.3":
+  version: 8.6.3
+  resolution: "react-native-fast-image@npm:8.6.3"
+  peerDependencies:
+    react: ^17 || ^18
+    react-native: ">=0.60.0"
+  checksum: 10c0/4ebeae53ffeadf1e7e5e133c1cfda81f9efe978f9ece10c732a0338149fe9104681bfdabc8427dad7c934b02bfcbd0e205bb6ca43e2844abc6054630ebe34454
+  languageName: node
+  linkType: hard
+
+"react-native-file-access@npm:^3.1.1":
+  version: 3.1.1
+  resolution: "react-native-file-access@npm:3.1.1"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 10c0/f31a4a2f74824f6b2308a521c9be6bd13ad9e6cd59f18f33a5fbe991e9d242facafa2073c87b61ce79bcbda7e2f249504e9202bb880c2cf65a7b99424a7e0dd7
+  languageName: node
+  linkType: hard
+
+"react-native-gesture-handler@npm:^2.23.0":
+  version: 2.23.0
+  resolution: "react-native-gesture-handler@npm:2.23.0"
   dependencies:
     "@egjs/hammerjs": "npm:^2.0.17"
     hoist-non-react-statics: "npm:^3.3.0"
     invariant: "npm:^2.2.4"
-    prop-types: "npm:^15.7.2"
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: 10c0/94c16a40370adfaaff8af6aec5938a8d5c5704afaf7ec569d9e11c66ecc3b5c763314c091a76573885636c04d9e6084de3696d59595c56aac9eb17b2f28e5c6c
+  checksum: 10c0/b4bfa9f71990fb5f75225b63878f668a9c6cee29cea6636482b64708432fb46b8c969c570022728fb130bf4e6ce306719dae200d1cb4050fdd2690e34b7b2a78
+  languageName: node
+  linkType: hard
+
+"react-native-get-random-values@npm:^1.11.0":
+  version: 1.11.0
+  resolution: "react-native-get-random-values@npm:1.11.0"
+  dependencies:
+    fast-base64-decode: "npm:^1.0.0"
+  peerDependencies:
+    react-native: ">=0.56"
+  checksum: 10c0/2ce71f1ab7f5b36d4a9dd59cc80b4aa75526f047c6680a7f1a388fa8b9a62efdacaf7b7de3be593c73e882773b2eee74916b00f7c8b158e40b46388998218586
   languageName: node
   linkType: hard
 
@@ -8279,6 +8534,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-native-image-picker@npm:^8.0.0":
+  version: 8.0.0
+  resolution: "react-native-image-picker@npm:8.0.0"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 10c0/27eb32b45566be98fe0a8730c522d8a4dfb7ab577404691d421fa4e1e496a4a145d87dd417874848562345b2991308bdf3c4d223b914eb1e13610a1cd56f6979
+  languageName: node
+  linkType: hard
+
 "react-native-is-edge-to-edge@npm:^1.1.6":
   version: 1.1.6
   resolution: "react-native-is-edge-to-edge@npm:1.1.6"
@@ -8286,6 +8551,20 @@ __metadata:
     react: ">=18.2.0"
     react-native: ">=0.73.0"
   checksum: 10c0/5690e521e8310d21643634a8d0dacd524e19b76695f347b26f649fcac156a7a901fd6daef7f78482381a41e8445f4552f40ade13790fdf112fab15b0f54dbabd
+  languageName: node
+  linkType: hard
+
+"react-native-permissions@npm:^5.2.5":
+  version: 5.2.5
+  resolution: "react-native-permissions@npm:5.2.5"
+  peerDependencies:
+    react: ">=18.1.0"
+    react-native: ">=0.70.0"
+    react-native-windows: ">=0.70.0"
+  peerDependenciesMeta:
+    react-native-windows:
+      optional: true
+  checksum: 10c0/ef7c78d39884e285cd568d7c0edc4aa3cf59b9ff31722f3fcfc80d0852552700d71660c159b2137e296472834e3dd109a38ca43554fdf59c82d80433287cffb4
   languageName: node
   linkType: hard
 
@@ -8312,30 +8591,40 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-safe-area-context@npm:4.12.0":
-  version: 4.12.0
-  resolution: "react-native-safe-area-context@npm:4.12.0"
+"react-native-safe-area-context@npm:^5.2.0":
+  version: 5.2.0
+  resolution: "react-native-safe-area-context@npm:5.2.0"
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: 10c0/122e7e24de39371b107fcac7ecd6b62d41301a46c945c7a6b3a07c8b65d4cb9ebf58bf163bfecfd430b1bd8fdf61d4f319dac1812edd7986c00b7d2cc16da24c
+  checksum: 10c0/4b8587cf01070a434b56c1453e5666ea2fbf8a15b2316f407ae361e83650a087a0236ab4bcd6aba421028457df59c18f51384d82862c77558da44987ba8dd5f1
   languageName: node
   linkType: hard
 
-"react-native-screens@npm:~4.4.0":
-  version: 4.4.0
-  resolution: "react-native-screens@npm:4.4.0"
+"react-native-screens@npm:^4.6.0":
+  version: 4.6.0
+  resolution: "react-native-screens@npm:4.6.0"
   dependencies:
     react-freeze: "npm:^1.0.0"
     warn-once: "npm:^0.1.0"
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: 10c0/63eff2f7761109ed05b0656c28bf34c83d5d7ebbcd92931202a250cab0e54109c764fac3471db7ae52f5c6c782bfca5caf5d8f1dc9a4a27a4b9889aeec7a4dcc
+  checksum: 10c0/9e7fdc975f67c1f3352d9446b0be4a9cc49f70bacffd47a2dc4db410bc6705a66e1a28cecf9035a754d37ec8d9ff7a1fd58bda100b50cbaf10ab3c62da4dc2aa
   languageName: node
   linkType: hard
 
-"react-native-web@npm:~0.19.13":
+"react-native-video@npm:^6.10.0":
+  version: 6.10.0
+  resolution: "react-native-video@npm:6.10.0"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 10c0/aa0a7ff82c9c40fdb3ca55333ed1edc1ac941318bf161c3246f43752ad59b0d7991164cb64fb9a4cf1b752b76e8af271765d417b149ded1ef98ea4d2aae650c6
+  languageName: node
+  linkType: hard
+
+"react-native-web@npm:^0.19.13":
   version: 0.19.13
   resolution: "react-native-web@npm:0.19.13"
   dependencies:
@@ -8354,16 +8643,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-webview@npm:13.12.5":
-  version: 13.12.5
-  resolution: "react-native-webview@npm:13.12.5"
+"react-native-webview@npm:^13.13.2":
+  version: 13.13.2
+  resolution: "react-native-webview@npm:13.13.2"
   dependencies:
     escape-string-regexp: "npm:^4.0.0"
     invariant: "npm:2.2.4"
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: 10c0/c738e622fa29837e0715e0632c8b8dafd3086bcef115353b0fab23d94169a789cefa7f7980206278612927f2fe236488eebf34795a6aa49a812a179e36c85d2c
+  checksum: 10c0/b1a6f609a4be496b2cc5d871fe0b9e65ab3912232f284818ee0a1bd82807af8800911f583719e4ede8d7ee9f42cd92ec0544e32625ba404a4f009d21d83c80c1
   languageName: node
   linkType: hard
 
@@ -9723,6 +10012,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"twemoji-parser@npm:14.0.0":
+  version: 14.0.0
+  resolution: "twemoji-parser@npm:14.0.0"
+  checksum: 10c0/22568ce100cac130131bb984088e7ee2e9ee917e8f1080826ae5b71adfb066289c847fa50028d5563f0c99651368ba61b9ebbb2cc6dc211ffb321904073099c2
+  languageName: node
+  linkType: hard
+
+"twemoji@npm:^14.0.2":
+  version: 14.0.2
+  resolution: "twemoji@npm:14.0.2"
+  dependencies:
+    fs-extra: "npm:^8.0.1"
+    jsonfile: "npm:^5.0.0"
+    twemoji-parser: "npm:14.0.0"
+    universalify: "npm:^0.1.2"
+  checksum: 10c0/e98caf0df63477d25d9bbfbdc32774249310bb2f4c6f2e99f51fea9be74461dee517200ff1864ac858ea3ea45cd02979d6c3cef630fd1a60d1de61f97ff5e3bf
+  languageName: node
+  linkType: hard
+
 "type-detect@npm:4.0.8":
   version: 4.0.8
   resolution: "type-detect@npm:4.0.8"
@@ -9870,7 +10178,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"universalify@npm:^0.1.0":
+"universalify@npm:^0.1.0, universalify@npm:^0.1.2":
   version: 0.1.2
   resolution: "universalify@npm:0.1.2"
   checksum: 10c0/e70e0339f6b36f34c9816f6bf9662372bd241714dc77508d231d08386d94f2c4aa1ba1318614f92015f40d45aae1b9075cd30bd490efbe39387b60a76ca3f045

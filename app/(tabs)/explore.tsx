@@ -1,109 +1,126 @@
-import { StyleSheet, Image, Platform } from 'react-native';
+/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ *
+ * @format
+ */
 
-import { Collapsible } from '@/components/Collapsible';
-import { ExternalLink } from '@/components/ExternalLink';
-import ParallaxScrollView from '@/components/ParallaxScrollView';
-import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
-import { IconSymbol } from '@/components/ui/IconSymbol';
+import * as React from 'react';
+import {Pressable, SafeAreaView, Text, View} from 'react-native';
+import {
+  ChatConversationType,
+  ConversationDetail,
+  TextInput,
+  useChatContext,
+} from 'react-native-chat-uikit';
 
-export default function TabTwoScreen() {
-  return (
-    <ParallaxScrollView
-      headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
-      headerImage={
-        <IconSymbol
-          size={310}
-          color="#808080"
-          name="chevron.left.forwardslash.chevron.right"
-          style={styles.headerImage}
+import {Container} from 'react-native-chat-uikit';
+
+const appKey = 'easemob#easeim';
+const userId = 'zuoyu';
+const userPs =
+  'YWMt1MnJtLxsEe-BRI0OrKx9iVzzvlQ7sUrSpVuQGlyIzFR0-qKAZz4R7pnDi6mwsod0AwMAAAGT1HK4iTeeSAB26nGOzMM-YzVzt027k45U2uofkCB_oU4AvREXvykrqA';
+const peerId = 'zuoyu2';
+
+function SendMessage() {
+  const [page, setPage] = React.useState(0);
+  const [appkey, setAppkey] = React.useState(appKey);
+  const [id, setId] = React.useState(userId);
+  const [ps, setPs] = React.useState(userPs);
+  const [peer, setPeer] = React.useState(peerId);
+  const im = useChatContext();
+
+  if (page === 0) {
+    return (
+      // 登录页面
+      <SafeAreaView style={{flex: 1}}>
+        <TextInput
+          placeholder="Please App Key."
+          value={appkey}
+          onChangeText={setAppkey}
         />
-      }>
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Explore</ThemedText>
-      </ThemedView>
-      <ThemedText>This app includes example code to help you get started.</ThemedText>
-      <Collapsible title="File-based routing">
-        <ThemedText>
-          This app has two screens:{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/explore.tsx</ThemedText>
-        </ThemedText>
-        <ThemedText>
-          The layout file in <ThemedText type="defaultSemiBold">app/(tabs)/_layout.tsx</ThemedText>{' '}
-          sets up the tab navigator.
-        </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/router/introduction">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Android, iOS, and web support">
-        <ThemedText>
-          You can open this project on Android, iOS, and the web. To open the web version, press{' '}
-          <ThemedText type="defaultSemiBold">w</ThemedText> in the terminal running this project.
-        </ThemedText>
-      </Collapsible>
-      <Collapsible title="Images">
-        <ThemedText>
-          For static images, you can use the <ThemedText type="defaultSemiBold">@2x</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">@3x</ThemedText> suffixes to provide files for
-          different screen densities
-        </ThemedText>
-        <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
-        <ExternalLink href="https://reactnative.dev/docs/images">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Custom fonts">
-        <ThemedText>
-          Open <ThemedText type="defaultSemiBold">app/_layout.tsx</ThemedText> to see how to load{' '}
-          <ThemedText style={{ fontFamily: 'SpaceMono' }}>
-            custom fonts such as this one.
-          </ThemedText>
-        </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/versions/latest/sdk/font">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Light and dark mode components">
-        <ThemedText>
-          This template has light and dark mode support. The{' '}
-          <ThemedText type="defaultSemiBold">useColorScheme()</ThemedText> hook lets you inspect
-          what the user's current color scheme is, and so you can adjust UI colors accordingly.
-        </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/develop/user-interface/color-themes/">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Animations">
-        <ThemedText>
-          This template includes an example of an animated component. The{' '}
-          <ThemedText type="defaultSemiBold">components/HelloWave.tsx</ThemedText> component uses
-          the powerful <ThemedText type="defaultSemiBold">react-native-reanimated</ThemedText>{' '}
-          library to create a waving hand animation.
-        </ThemedText>
-        {Platform.select({
-          ios: (
-            <ThemedText>
-              The <ThemedText type="defaultSemiBold">components/ParallaxScrollView.tsx</ThemedText>{' '}
-              component provides a parallax effect for the header image.
-            </ThemedText>
-          ),
-        })}
-      </Collapsible>
-    </ParallaxScrollView>
+        <TextInput
+          placeholder="Please Login ID."
+          value={id}
+          onChangeText={setId}
+        />
+        <TextInput
+          placeholder="Please Login token or password."
+          value={ps}
+          onChangeText={setPs}
+        />
+        <TextInput
+          placeholder="Please peer ID."
+          value={peer}
+          onChangeText={setPeer}
+        />
+        <Pressable
+          onPress={() => {
+            console.log('test:zuoyu:login', id, ps);
+            im.login({
+              userId: id,
+              userToken: ps,
+              result: res => {
+                console.log('login result', res);
+                console.log('test:zuoyu:error', res);
+                if (res.isOk === true) {
+                  setPage(1);
+                } else {
+                  console.warn('login failed');
+                }
+              },
+            });
+          }}>
+          <Text>{'Login'}</Text>
+        </Pressable>
+        <Pressable
+          onPress={() => {
+            im.logout({
+              result: result => {
+                console.log('logout result', result);
+              },
+            });
+          }}>
+          <Text>{'Logout'}</Text>
+        </Pressable>
+      </SafeAreaView>
+    );
+  } else if (page === 1) {
+    // 聊天页面
+    return (
+      <SafeAreaView style={{flex: 1}}>
+        <ConversationDetail
+          type={'chat'}
+          convId={peerId}
+          convType={ChatConversationType.PeerChat}
+          NavigationBar={
+            <View
+              style={{height: 40, width: 40, backgroundColor: 'green'}}
+              onTouchEnd={() => {
+                im.logout({
+                  result: result => {
+                    console.log('logout result', result);
+                    setPage(0);
+                  },
+                });
+              }}
+            />
+          }
+        />
+      </SafeAreaView>
+    );
+  } else {
+    return <View />;
+  }
+}
+
+function App(): React.JSX.Element {
+  // return <View><Text>{'test'}</Text></View>;
+  return (
+    <Container options={{appKey: appKey, autoLogin: false, debugModel: true}}>
+      <SendMessage />
+    </Container>
   );
 }
 
-const styles = StyleSheet.create({
-  headerImage: {
-    color: '#808080',
-    bottom: -90,
-    left: -35,
-    position: 'absolute',
-  },
-  titleContainer: {
-    flexDirection: 'row',
-    gap: 8,
-  },
-});
+export default App;
