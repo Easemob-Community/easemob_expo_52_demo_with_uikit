@@ -2,18 +2,24 @@
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
+This example code mainly demonstrates creating a project using `expo 52` version, integrating `uikit` and `callkit`. Additionally, it includes the necessary dependencies for the project to compile and run properly, with message sending and receiving functionality.
+
+For specific examples, [see here](<./app/(tabs)/explore.tsx>)
+
 ## Get started
 
 1. Install dependencies
 
    ```bash
-   npm install
+    yarn
    ```
 
 2. Start the app
 
    ```bash
-    npx expo start
+    yarn run start
+    # or
+    yarn run startr
    ```
 
 In the output, you'll find options to open the app in a
@@ -49,10 +55,10 @@ Join our community of developers creating universal apps.
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
 
-## create project flow
+## reference: create project flow
 
 ```sh
-npx create-expo-app@latest 
+npx create-expo-app@latest
 
 yarn set version 4.6.0
 
