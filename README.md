@@ -65,11 +65,13 @@ yarn run expo prebuild
 yarn add @react-native-async-storage/async-storage \
 @react-native-camera-roll/camera-roll \
 @react-native-clipboard/clipboard \
+@react-native-community/blur \
 date-fns \
 pinyin-pro \
 pure-uuid \
 react-native-chat-uikit \
 react-native-chat-sdk \
+react-native-chat-callkit \
 react-native-audio-recorder-player \
 react-native-create-thumbnail \
 react-native-device-info \
