@@ -5,22 +5,26 @@
  * @format
  */
 
-import * as React from 'react';
-import {Pressable, SafeAreaView, Text, View} from 'react-native';
+import * as React from "react";
+import { Pressable, SafeAreaView, Text, View } from "react-native";
 import {
   ChatConversationType,
   ConversationDetail,
   TextInput,
   useChatContext,
-} from 'react-native-chat-uikit';
+  Container as UIKitContainer,
+} from "react-native-chat-uikit";
 
-import {Container} from 'react-native-chat-uikit';
+import {
+  GlobalContainer as CallKitContainer,
+  CallUser,
+} from "react-native-chat-callkit";
 
-const appKey = 'easemob#easeim';
-const userId = 'zuoyu';
+const appKey = "easemob#easeim";
+const userId = "zuoyu";
 const userPs =
-  'YWMt1MnJtLxsEe-BRI0OrKx9iVzzvlQ7sUrSpVuQGlyIzFR0-qKAZz4R7pnDi6mwsod0AwMAAAGT1HK4iTeeSAB26nGOzMM-YzVzt027k45U2uofkCB_oU4AvREXvykrqA';
-const peerId = 'zuoyu2';
+  "YWMt1MnJtLxsEe-BRI0OrKx9iVzzvlQ7sUrSpVuQGlyIzFR0-qKAZz4R7pnDi6mwsod0AwMAAAGT1HK4iTeeSAB26nGOzMM-YzVzt027k45U2uofkCB_oU4AvREXvykrqA";
+const peerId = "zuoyu2";
 
 function SendMessage() {
   const [page, setPage] = React.useState(0);
@@ -33,7 +37,7 @@ function SendMessage() {
   if (page === 0) {
     return (
       // 登录页面
-      <SafeAreaView style={{flex: 1}}>
+      <SafeAreaView style={{ flex: 1 }}>
         <TextInput
           placeholder="Please App Key."
           value={appkey}
@@ -56,50 +60,52 @@ function SendMessage() {
         />
         <Pressable
           onPress={() => {
-            console.log('test:zuoyu:login', id, ps);
+            console.log("test:zuoyu:login", id, ps);
             im.login({
               userId: id,
               userToken: ps,
-              result: res => {
-                console.log('login result', res);
-                console.log('test:zuoyu:error', res);
+              result: (res) => {
+                console.log("login result", res);
+                console.log("test:zuoyu:error", res);
                 if (res.isOk === true) {
                   setPage(1);
                 } else {
-                  console.warn('login failed');
+                  console.warn("login failed");
                 }
               },
             });
-          }}>
-          <Text>{'Login'}</Text>
+          }}
+        >
+          <Text>{"Login"}</Text>
         </Pressable>
         <Pressable
           onPress={() => {
             im.logout({
-              result: result => {
-                console.log('logout result', result);
+              result: (result) => {
+                console.log("logout result", result);
               },
             });
-          }}>
-          <Text>{'Logout'}</Text>
+          }}
+        >
+          <Text>{"Logout"}</Text>
         </Pressable>
       </SafeAreaView>
     );
   } else if (page === 1) {
     // 聊天页面
     return (
-      <SafeAreaView style={{flex: 1}}>
+      <SafeAreaView style={{ flex: 1 }}>
         <ConversationDetail
-          type={'chat'}
+          type={"chat"}
           convId={peerId}
           convType={ChatConversationType.PeerChat}
           NavigationBar={
             <View
-              style={{height: 40, width: 40, backgroundColor: 'green'}}
+              style={{ height: 40, width: 40, backgroundColor: "green" }}
               onTouchEnd={() => {
                 im.logout({
-                  result: result => {
-                    console.log('logout result', result);
+                  result: (result) => {
+                    console.log("logout result", result);
                     setPage(0);
                   },
                 });
@@ -117,9 +123,38 @@ function SendMessage() {
 function App(): React.JSX.Element {
   // return <View><Text>{'test'}</Text></View>;
   return (
-    <Container options={{appKey: appKey, autoLogin: false, debugModel: true}}>
-      <SendMessage />
-    </Container>
+    <UIKitContainer
+      options={{ appKey: appKey, autoLogin: false, debugModel: true }}
+    >
+      <CallKitContainer
+        option={{appKey: appKey, agoraAppId: "easemob#easeim"}}
+        requestRTCToken={function (params: {
+          appKey: string;
+          channelId: string;
+          userId: string;
+          userChannelId?: number;
+          type?: "easemob" | "agora" | undefined;
+          onResult: (params: { data?: any; error?: any }) => void;
+        }): void {
+          throw new Error("Function not implemented.");
+        }}
+        requestUserMap={function (params: {
+          appKey: string;
+          channelId: string;
+          userId: string;
+          onResult: (params: { data?: any; error?: any }) => void;
+        }): void {
+          throw new Error("Function not implemented.");
+        }}
+        requestCurrentUser={function (params: {
+          onResult: (params: { user: CallUser; error?: any }) => void;
+        }): void {
+          throw new Error("Function not implemented.");
+        }}
+      >
+        <SendMessage />
+      </CallKitContainer>
+    </UIKitContainer>
   );
 }
 
