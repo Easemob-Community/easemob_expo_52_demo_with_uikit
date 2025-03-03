@@ -4916,9 +4916,9 @@ __metadata:
     react-native: "npm:0.76.7"
     react-native-agora: "npm:4.3.2"
     react-native-audio-recorder-player: "npm:^3.6.12"
-    react-native-chat-callkit: /Users/asterisk/Output/npm/react-native-chat-callkit-1.0.4
+    react-native-chat-callkit: "npm:1.0.5"
     react-native-chat-sdk: "npm:^1.8.0"
-    react-native-chat-uikit: /Users/asterisk/tmp2025/2025-01-20/react-native-chat-uikit-2.4.2
+    react-native-chat-uikit: "npm:2.4.3-beta.1"
     react-native-create-thumbnail: "npm:^2.0.1"
     react-native-device-info: "npm:^14.0.4"
     react-native-document-picker: "npm:^9.3.1"
@@ -8518,9 +8518,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-chat-callkit@file:/Users/asterisk/Output/npm/react-native-chat-callkit-1.0.4::locator=expo_demo_2025-02-07%40workspace%3A.":
-  version: 1.0.4
-  resolution: "react-native-chat-callkit@file:/Users/asterisk/Output/npm/react-native-chat-callkit-1.0.4#/Users/asterisk/Output/npm/react-native-chat-callkit-1.0.4::hash=512802&locator=expo_demo_2025-02-07%40workspace%3A."
+"react-native-chat-callkit@npm:1.0.5":
+  version: 1.0.5
+  resolution: "react-native-chat-callkit@npm:1.0.5"
   dependencies:
     "@rneui/base": "npm:^4.0.0-rc.7"
     "@rneui/themed": "npm:^4.0.0-rc.7"
@@ -8540,7 +8540,7 @@ __metadata:
     react-native-safe-area-context: ">=4.11.1"
     react-native-screens: ">=3.20.0"
     react-native-tab-view: ^3.5.1
-  checksum: 10c0/d38ed3d4faf3288dcee794be7f9bbc2501a47e448e9f221a1bf90f350d970b812f67c82ec32892a7f48f8122284f0b410c15b724c79233dbf457ef6c0c91e276
+  checksum: 10c0/12fa9e6bf8899db461e885415502f02325b85bc28e3e94239c70ca8f5f126c0939e26ae07a1db94188e66d6d59e7837d97afcd85b7d99ca8a55effc2378ca1ab
   languageName: node
   linkType: hard
 
@@ -8554,9 +8554,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-chat-uikit@file:/Users/asterisk/tmp2025/2025-01-20/react-native-chat-uikit-2.4.2::locator=expo_demo_2025-02-07%40workspace%3A.":
-  version: 2.4.2
-  resolution: "react-native-chat-uikit@file:/Users/asterisk/tmp2025/2025-01-20/react-native-chat-uikit-2.4.2#/Users/asterisk/tmp2025/2025-01-20/react-native-chat-uikit-2.4.2::hash=75a83b&locator=expo_demo_2025-02-07%40workspace%3A."
+"react-native-chat-uikit@npm:2.4.3-beta.1":
+  version: 2.4.3-beta.1
+  resolution: "react-native-chat-uikit@npm:2.4.3-beta.1"
   peerDependencies:
     "@react-native-async-storage/async-storage": ">=1.17.11"
     "@react-native-camera-roll/camera-roll": ">=5.6.0"
@@ -8589,7 +8589,7 @@ __metadata:
   peerDependenciesMeta:
     react-native-fast-image:
       optional: true
-  checksum: 10c0/4bbb2aa8563301344acc4a5b581d14a2a57790d3a985f9030d90b5c740697ab6affccf2cd1bc55487b5b1ae23441941c482e70346fcb579c22dda310e7426b70
+  checksum: 10c0/54a4752c04058b3b2a5123eae7792a7dd7cf0be1b73cf87d2ca04068b3054fe61fc2c8f6e19ac5af833dd4d020c63a6b0a8be0b4df831b9f91ac86a23bc7070a
   languageName: node
   linkType: hard
 

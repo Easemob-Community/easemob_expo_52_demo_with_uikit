@@ -1410,7 +1410,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - react-native-chat-callkit (1.0.4):
+  - react-native-chat-callkit (1.0.5):
     - RCT-Folly
     - RCTRequired
     - RCTTypeSafety
@@ -1439,7 +1439,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - react-native-chat-uikit (2.4.2):
+  - react-native-chat-uikit (2.4.3-beta.1):
     - RCT-Folly
     - RCTRequired
     - RCTTypeSafety
@@ -2550,9 +2550,9 @@ SPEC CHECKSUMS:
   react-native-agora: 37bf8e066bbfba01b4e5a72ad0d63cd6b0d2a00b
   react-native-blur: 28b0a731ed804bed3e88757c2414305896e6b47e
   react-native-cameraroll: c71058d31a5e8088c9d42ff20bfe9cbc6752d36a
-  react-native-chat-callkit: e82d8b904fb8134459feb7adbfbfcdaf24b0044c
+  react-native-chat-callkit: b0965557ad304ff74002a5854788a93fe325dfb6
   react-native-chat-sdk: 13873d41e566756d2d3079ad9392b07cd4b72e03
-  react-native-chat-uikit: 28103c2f5607376ecbc2fa4598a1fe70521a262b
+  react-native-chat-uikit: fa540cc35012b93e040cf4ac2992709196b57927
   react-native-create-thumbnail: 4ffd51a6c02a9313edc74e2460cd07264221f554
   react-native-document-picker: e9d83c149bdd72dc01cf8dcb8df0389c6bd5fddb
   react-native-get-random-values: 21325b2244dfa6b58878f51f9aa42821e7ba3d06
