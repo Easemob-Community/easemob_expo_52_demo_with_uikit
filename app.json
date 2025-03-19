@@ -8,6 +8,7 @@
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "turboModules": true,
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.asteriskzuo.expo-demo-20250207"
